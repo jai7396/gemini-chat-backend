@@ -1,10 +1,18 @@
-
+import os
 import psycopg2
+from urllib.parse import urlparse
+
+db_url = os.getenv("DATABASE_URL")
+
+if not db_url:
+    raise Exception("DATABASE_URL environment variable not set")
+
+result = urlparse(db_url)
 
 conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    user="postgres",
-    password="Pandu@123",
-    database="gemini_backend"
+    database=result.path[1:],      
+    user=result.username,
+    password=result.password,
+    host=result.hostname,
+    port=result.port
 )
