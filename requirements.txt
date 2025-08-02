@@ -5,6 +5,5 @@ redis
 rq
 sqlalchemy
 psycopg2-binary
-jwt
 PyJWT==2.8.0
 google-generativeai
