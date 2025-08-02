@@ -1,9 +1,6 @@
+import os
 import psycopg2
 
-conn = psycopg2.connect(
-    host="localhost",
-    port=5432,
-    user="postgres",
-    password="Pandu@123",
-    database="gemini_backend"
-)
+DATABASE_URL = os.getenv("DATABASE_URL")
+
+conn = psycopg2.connect(DATABASE_URL)
