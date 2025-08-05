@@ -5,6 +5,7 @@ import json
 from app.db_conn import conn
 from app.tasks.gemini import gemini_reply
 
+
 # Create router instance with '/chatroom' prefix
 router = APIRouter(prefix="/chatroom")
 
