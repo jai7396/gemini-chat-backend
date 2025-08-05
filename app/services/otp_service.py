@@ -1,6 +1,7 @@
 import redis
 from app.config import REDIS_URL, OTP_EXPIRY_SECONDS
 
+
 # Initialize Redis client with the configured URL
 r = redis.from_url(REDIS_URL)
 
