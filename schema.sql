@@ -1,4 +1,5 @@
 -- Users Table
+
 CREATE TABLE Users (
     id TEXT PRIMARY KEY,
     mobile_number TEXT UNIQUE NOT NULL,
