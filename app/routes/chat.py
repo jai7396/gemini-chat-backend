@@ -3,6 +3,7 @@ from app.jwt_utils import decode_token
 from app.rate_limit import check_rate_limit, get_user_subscription_tier
 from app.genai import send_to_gemini
 
+
 router = APIRouter(prefix="/chat")
 
 @router.post("/send")
