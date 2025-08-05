@@ -1,5 +1,5 @@
 
-# Gemini Chat Backend API - Postman Collection
+#. Gemini Chat Backend API - Postman Collection
 
 This Postman collection provides a complete set of requests for interacting with the Gemini Chat Backend built using FastAPI. It covers authentication, chatroom management, chat messages, subscriptions (Stripe), and webhook testing.
 
