@@ -9,7 +9,7 @@ router = APIRouter(prefix="/webhook")
 
 # Check this is in postman
 
-@router.post("/stripe")  
+@router.post("/webhook/stripe")  
 async def stripe_webhook(request: Request):
     payload = await request.body()
     
