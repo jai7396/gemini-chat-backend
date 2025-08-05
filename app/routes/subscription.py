@@ -4,6 +4,7 @@ from app.db_conn import conn
 from app.config import STRIPE_SECRET_KEY, STRIPE_PRICE_ID, STRIPE_WEBHOOK_SECRET
 import stripe
 
+
 # Create router for subscription-related endpoints
 router = APIRouter(prefix="/subscribe")
 
