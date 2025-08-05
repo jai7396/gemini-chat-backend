@@ -2,7 +2,7 @@ fastapi
 uvicorn
 python-dotenv
 redis
-celery==5.x.x
+celery
 sqlalchemy
 psycopg2-binary
 PyJWT==2.8.0
