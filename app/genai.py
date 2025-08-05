@@ -29,7 +29,7 @@ def send_to_gemini(message: str) -> str:
         model_names = [
             "gemini-1.5-flash",     # Latest and fastest
             "gemini-1.5-pro",      # More capable but slower
-            "gemini-1.0-pro",      # Fallback option
+            "gemini-1.0-pro",      
         ]
         
         for model_name in model_names:
