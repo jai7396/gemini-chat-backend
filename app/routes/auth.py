@@ -6,6 +6,7 @@ from app.jwt_utils import create_token
 from app.services.otp_service import store_otp, verify_stored_otp
 from app.db_conn import conn
 
+
 # Create router instance with /auth prefix
 router = APIRouter(prefix="/auth")
 
