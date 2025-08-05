@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from app.jwt_utils import decode_token
 import logging
 
+
 class AuthMiddleware(BaseHTTPMiddleware):
     """Middleware for handling authentication using JWT tokens.
     Validates tokens and adds user info to request state."""
