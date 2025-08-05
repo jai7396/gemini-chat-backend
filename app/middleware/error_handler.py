@@ -1,6 +1,7 @@
 from fastapi import Request, FastAPI
 from fastapi.responses import JSONResponse
 
+
 def add_error_handlers(app: FastAPI):
     """
     Adds global exception handler to the FastAPI application.
