@@ -24,7 +24,7 @@ def check_rate_limit(user_id: str):
             detail="Daily message limit reached (Basic tier). Upgrade to Pro for unlimited access."
         )
 
-    # Increment or set counter with expiry until midnight UTC
+    # Increment or set counter with expiry until midnight 
     if not count:
         tomorrow = datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(days=1)
         ttl = int((tomorrow - datetime.utcnow()).total_seconds())
