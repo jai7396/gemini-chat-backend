@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request, HTTPException, Body
 from fastapi.responses import JSONResponse
-from app.db_conn import conn  # psycopg2 connection
+from app.db_conn import conn  
 import psycopg2
 
 router = APIRouter(prefix='/user')
