@@ -136,7 +136,7 @@ Your API should now be running at: `http://localhost:8000`
 ##  Optional: Run Celery Worker (for background tasks)
 
 ```bash
-celery -A app.tasks.worker worker --loglevel=info
+celery -A celery_worker.celery_app worker --loglevel=info
 ```
 
 ---
