@@ -4,9 +4,9 @@ from app.db_conn import conn
 import uuid
 
 # Initialize Celery instance with Redis as message broker
-celery = Celery(__name__, broker='redis://127.0.0.1:6379/0')
+celery_app = Celery(__name__, broker='redis://127.0.0.1:6379/0')
 
-@celery.task
+@celery_app.task
 def gemini_reply(chatroom_id: str, prompt: str):
     """
     Asynchronous task to generate and store Gemini's reply
